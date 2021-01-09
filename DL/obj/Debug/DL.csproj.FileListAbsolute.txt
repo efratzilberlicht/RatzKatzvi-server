@@ -1,0 +1,121 @@
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\bin\Debug\DL.dll.config
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\bin\Debug\DL.dll
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\bin\Debug\DL.pdb
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\obj\Debug\DL.csproj.CopyComplete
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\obj\Debug\DL.dll
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\obj\Debug\DL.pdb
+C:\Users\User\Desktop\מחשבים\רץ כצבי\RatzKatzvi\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\obj\Debug\DL.dll
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\obj\Debug\DL.pdb
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\DL.dll.config
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\DL.dll
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\DL.pdb
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\EntityFramework.dll
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\EntityFramework.xml
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\הורדות\RatzKatzvi (1)\RatzKatzvi\DL\obj\Debug\DL.csproj.CopyComplete
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\DL.dll.config
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\DL.dll
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\DL.pdb
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\EntityFramework.dll
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\EntityFramework.xml
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\obj\Debug\DL.csproj.CopyComplete
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\obj\Debug\DL.dll
+C:\פרוייקט רץ כצבי\RatzKatzvi (1)\RatzKatzvi\DL\obj\Debug\DL.pdb
+D:\Documents and Settings\golov\My Documents\המשפחה\ילדודס\רחלי הזורמת\עבודה\עבודה לרחלי אלפא\RatzKatzvi (2)\RatzKatzvi (2)\RatzKatzvi\RatzKatzvi\DL\bin\Debug\DL.dll.config
+D:\Documents and Settings\golov\My Documents\המשפחה\ילדודס\רחלי הזורמת\עבודה\עבודה לרחלי אלפא\RatzKatzvi (2)\RatzKatzvi (2)\RatzKatzvi\RatzKatzvi\DL\bin\Debug\DL.dll
+D:\Documents and Settings\golov\My Documents\המשפחה\ילדודס\רחלי הזורמת\עבודה\עבודה לרחלי אלפא\RatzKatzvi (2)\RatzKatzvi (2)\RatzKatzvi\RatzKatzvi\DL\bin\Debug\DL.pdb
+D:\Documents and Settings\golov\My Documents\המשפחה\ילדודס\רחלי הזורמת\עבודה\עבודה לרחלי אלפא\RatzKatzvi (2)\RatzKatzvi (2)\RatzKatzvi\RatzKatzvi\DL\bin\Debug\EntityFramework.dll
+D:\Documents and Settings\golov\My Documents\המשפחה\ילדודס\רחלי הזורמת\עבודה\עבודה לרחלי אלפא\RatzKatzvi (2)\RatzKatzvi (2)\RatzKatzvi\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents and Settings\golov\My Documents\המשפחה\ילדודס\רחלי הזורמת\עבודה\עבודה לרחלי אלפא\RatzKatzvi (2)\RatzKatzvi (2)\RatzKatzvi\RatzKatzvi\DL\bin\Debug\EntityFramework.xml
+D:\Documents and Settings\golov\My Documents\המשפחה\ילדודס\רחלי הזורמת\עבודה\עבודה לרחלי אלפא\RatzKatzvi (2)\RatzKatzvi (2)\RatzKatzvi\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents and Settings\golov\My Documents\המשפחה\ילדודס\רחלי הזורמת\עבודה\עבודה לרחלי אלפא\RatzKatzvi (2)\RatzKatzvi (2)\RatzKatzvi\RatzKatzvi\DL\obj\Debug\DL.dll
+D:\Documents and Settings\golov\My Documents\המשפחה\ילדודס\רחלי הזורמת\עבודה\עבודה לרחלי אלפא\RatzKatzvi (2)\RatzKatzvi (2)\RatzKatzvi\RatzKatzvi\DL\obj\Debug\DL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\bin\Debug\DL.dll.config
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\bin\Debug\DL.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\bin\Debug\DL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\bin\Debug\EntityFramework.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\bin\Debug\EntityFramework.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\obj\Debug\DL.csproj.CopyComplete
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\obj\Debug\DL.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\‏‏תיקיה חדשה\RatzKatzvi\DL\obj\Debug\DL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\bin\Debug\DL.dll.config
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\bin\Debug\DL.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\bin\Debug\DL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\bin\Debug\EntityFramework.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\bin\Debug\EntityFramework.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\obj\Debug\DL.csproj.CopyComplete
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\obj\Debug\DL.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\obj\Debug\DL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\bin\Debug\DL.dll.config
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\bin\Debug\DL.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\bin\Debug\DL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\bin\Debug\EntityFramework.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\bin\Debug\GemBox.Document.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\bin\Debug\EntityFramework.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\bin\Debug\GemBox.Document.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\obj\Debug\DL.Resource.resources
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\obj\Debug\DL.csproj.GenerateResource.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\obj\Debug\DL.csproj.CopyComplete
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\obj\Debug\DL.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\server\RatzKatzvi---server\DL\obj\Debug\DL.pdb
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\bin\Debug\DL.dll.config
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\bin\Debug\DL.dll
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\bin\Debug\DL.pdb
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\bin\Debug\GemBox.Document.dll
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\bin\Debug\GemBox.Document.xml
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\obj\Debug\DL.Resource.resources
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\obj\Debug\DL.csproj.GenerateResource.cache
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\obj\Debug\DL.csproj.CopyComplete
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\obj\Debug\DL.dll
+C:\Users\User\Desktop\RatzKatzvi-git\‏‏‏‏RatzKatzvi---server - old - עותק (2)\DL\obj\Debug\DL.pdb
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\DL.dll.config
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\DL.dll
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\DL.pdb
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\EntityFramework.dll
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\GemBox.Document.dll
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\itextsharp.dll
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\EntityFramework.xml
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\GemBox.Document.xml
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\itextsharp.xml
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\obj\Debug\DL.csproj.CopyComplete
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\obj\Debug\DL.dll
+C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\DL\obj\Debug\DL.pdb

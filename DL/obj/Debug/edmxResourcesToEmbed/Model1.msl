@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RatzKatzviModelStoreContainer" CdmEntityContainer="RatzhKatzviEntities1">
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="RatzKatzviModel.Items">
+        <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemKind" ColumnName="ItemKind" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="VisitedCounter" ColumnName="VisitedCounter" />
+          <ScalarProperty Name="EnableSearch" ColumnName="EnableSearch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemsSubject">
+      <EntityTypeMapping TypeName="RatzKatzviModel.ItemsSubject">
+        <MappingFragment StoreEntitySet="ItemsSubject">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kinds">
+      <EntityTypeMapping TypeName="RatzKatzviModel.Kinds">
+        <MappingFragment StoreEntitySet="Kinds">
+          <ScalarProperty Name="IdKind" ColumnName="IdKind" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LastLocation">
+      <EntityTypeMapping TypeName="RatzKatzviModel.LastLocation">
+        <MappingFragment StoreEntitySet="LastLocation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LastLocation1" ColumnName="LastLocation" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WordsLocations">
+      <EntityTypeMapping TypeName="RatzKatzviModel.WordsLocations">
+        <MappingFragment StoreEntitySet="WordsLocations">
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SearchOrSubjectId" ColumnName="SearchOrSubjectId" />
+          <ScalarProperty Name="WordLocation" ColumnName="WordLocation" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PreSearches">
+      <EntityTypeMapping TypeName="RatzKatzviModel.PreSearches">
+        <MappingFragment StoreEntitySet="PreSearches">
+          <ScalarProperty Name="SearchedCounter" ColumnName="SearchedCounter" />
+          <ScalarProperty Name="PreSearch" ColumnName="PreSearch" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="RatzKatzviModel.Subjects">
+        <MappingFragment StoreEntitySet="Subjects">
+          <ScalarProperty Name="Parent" ColumnName="Parent" />
+          <ScalarProperty Name="SearchedCounter" ColumnName="SearchedCounter" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="RatzKatzviModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookPages">
+      <EntityTypeMapping TypeName="RatzKatzviModel.BookPages">
+        <MappingFragment StoreEntitySet="BookPages">
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="BookPage" ColumnName="BookPage" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

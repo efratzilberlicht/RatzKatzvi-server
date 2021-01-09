@@ -1,0 +1,143 @@
+﻿using BL;
+using Dto;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+
+namespace RatzKatzvi.Controllers
+{
+    [RoutePrefix("api/items")]
+    public class ItemsController : ApiController
+    {
+        //GetAllItems
+        public IHttpActionResult GetAllItems()
+        {
+            try
+            
+            {
+                return Ok(ItemsBL.GetAllItems());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return Ok();
+            }
+        }
+        //GetItemById
+        [HttpGet]
+
+        [Route("GetById/{itemId}")]
+
+        public IHttpActionResult GetItemById(int itemId)
+        {
+            try
+            {
+                return Ok(ItemsBL.GetItemById(itemId));
+            }
+            catch
+            {
+                return NotFound();
+            }
+        }
+        //GetItemByName
+        [HttpGet]
+        [Route("GetAllByName/{item}")]
+        public IHttpActionResult GetAllByName(string item)
+        {
+            try
+            {
+
+                Items1 it = ItemsBL.GetItemByName(item);
+                return Ok(it);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+
+                return NotFound();
+            }
+        }
+        //GetAllByKind
+        [Route("GetAllByKind/{kindId}/{pageNum}")]
+        public IHttpActionResult GetAllByKind(int kindId, int pageNum = 0)
+        {
+            try
+            {
+                List<Items1> items = ItemsBL.GetAllByKind(kindId, pageNum);
+                if (items.Count == 0)
+                    throw new Exception();
+                return Ok(items);
+            }
+            catch (Exception ex)
+            {
+                return NotFound();
+            }
+        }
+        //GetAllBySubjectId
+        [Route("GetAllBySubjectId/{subjectId}")]
+        public IHttpActionResult GetAllBySubjectId(int subjectId)
+        {
+            try
+            {
+                List<Items1> items = ItemsBL.GetAllBySubjectId(subjectId);
+                if (items.Count == 0)
+                    throw new Exception();
+                return Ok(items);
+              
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+                return Ok();
+            }
+        }
+        // POST: api/Items
+        public IHttpActionResult Post([FromBody] Items1 item)
+        {
+            try
+            {
+                ItemsBL.AddItem(item);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return Conflict();
+            }
+        }
+
+        // PUT: api/Items/5
+        //UPDATE
+
+        [HttpPut]
+        [Route("Put")]
+        public IHttpActionResult Put([FromBody] Items1 item)
+        {
+            try
+            {
+                ItemsBL.UpdateItem(item);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return NotFound();
+            }
+        }
+
+        // DELETE: api/Items/5
+        public IHttpActionResult Delete(Items1 item)
+        {
+            try
+            {
+                ItemsBL.DeleteItem(item);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return Conflict();
+            }
+        }
+    }
+}
