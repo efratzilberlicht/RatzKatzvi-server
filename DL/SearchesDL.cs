@@ -9,9 +9,9 @@ namespace DL
 {
     public static class SearchesDL
     {
-        public static Dictionary<int, List<BookPages>> SearchInBooks(string text)
+        public static  List<BookPages> SearchInBooks(string text)
         {
-            Dictionary<int, List<BookPages>> searchResultPages = new Dictionary<int, List<BookPages>>();
+            List<BookPages> searchResultPages = new List<BookPages>();
             if (text.Length > 0)
             {
                 string[] searchWords = text.Split(' ');
@@ -27,7 +27,7 @@ namespace DL
                     bookPages = BookPagesDL.GetBookByItemId(item.ItemId);
                     bookPages = BookPagesDL.SearchText(bookPages, rgx);
                     if (bookPages.Count > 0)
-                        searchResultPages.Add(item.ItemId, bookPages);
+                        searchResultPages.AddRange(bookPages);
                 }
             }
             return searchResultPages;

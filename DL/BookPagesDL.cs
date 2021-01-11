@@ -1,5 +1,4 @@
-﻿//using iTextSharp.text.pdf.parser;
-using iTextSharp.text.pdf.parser;
+﻿using iTextSharp.text.pdf.parser;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -193,4 +192,3 @@ namespace DL
         }
     }
 }
-//var rgx = new Regex(".*my (.*) is.*");

@@ -50,7 +50,6 @@ namespace DL
                 return ex.ToString();
             }
         }
-
         public static string SaveFile(HttpRequest files, string specificFolder)
         {
             try
@@ -91,49 +90,60 @@ namespace DL
                 return "Error";
             }
         }
-        public static string[] GetAllFilesWithName(string name, string specificFolder)
+        public static List<string> GetAllFilesWithName(string name, string specificFolder)
         {
-            string[] fileArray = Directory.GetFiles(HttpContext.Current.Server.MapPath("~/Files/" + specificFolder + name), "*.*", SearchOption.AllDirectories);
-            for (int i = 0; i < fileArray.Length; i++)
+            string[] filesArray = Directory.GetFiles(HttpContext.Current.Server.MapPath("~/Files/" + specificFolder), "*.*", SearchOption.AllDirectories);
+            List<string> resultFiles = new List<string>();
+            for (int i = 0; i < filesArray.Length; i++)
             {
-                var split = fileArray[i].Split('\\');
-                fileArray[i] = split[split.Length - 1];
+                var split = filesArray[i].Split('\\');
+                if (split[split.Length - 1].Contains(name))
+                {
+                    resultFiles.Add(filesArray[i]);
+                }
             }
-            return fileArray;
+            return resultFiles;
         }
-        public static HttpResponseMessage DownloadFile(string fileName)
+        public static HttpResponseMessage DownloadFile(string fileFolder, string fileName)
         {
-            if ((System.IO.File.Exists(HttpContext.Current.Server.MapPath("~/Files/" + fileName))))
+            if ((System.IO.File.Exists(HttpContext.Current.Server.MapPath("~/Files/" + fileFolder + "/" + fileName))))
 
                 using (var webClient = new WebClient())
                 {
-                    byte[] data = webClient.DownloadData(HttpContext.Current.Server.MapPath("~/Files/" + fileName));
-                    var ms = new MemoryStream(data);
-
-                    var result = new HttpResponseMessage(HttpStatusCode.OK)
+                    try
                     {
-                        Content = new ByteArrayContent(ms.ToArray())
-                    };
-                    result.Content.Headers.ContentDisposition =
-                        new ContentDispositionHeaderValue("attachment")
-                        {
-                            FileName = fileName
-                        };
-                    result.Content.Headers.ContentType =
-                        new MediaTypeHeaderValue("application/octet-stream");
+                        byte[] data = webClient.DownloadData(HttpContext.Current.Server.MapPath("~/Files/" + fileFolder + "/" + fileName));
+                        var ms = new MemoryStream(data);
 
-                    return result;
+                        var result = new HttpResponseMessage(HttpStatusCode.OK)
+                        {
+                            Content = new ByteArrayContent(ms.ToArray())
+                        };
+                        result.Content.Headers.ContentDisposition =
+                            new ContentDispositionHeaderValue("attachment")
+                            {
+                                FileName = fileName
+                            };
+                        result.Content.Headers.ContentType =
+                            new MediaTypeHeaderValue("application/octet-stream");
+
+                        return result;
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
                 }
             return new HttpResponseMessage(HttpStatusCode.NotFound);
 
         }
-        public static bool Delete(string fileName)
+        public static bool Delete(string folderName, string fileName)
         {
-            if ((System.IO.File.Exists(HttpContext.Current.Server.MapPath("~/Files/" + fileName))))
+            if ((System.IO.File.Exists(HttpContext.Current.Server.MapPath("~/Files/" + folderName + fileName))))
             {
                 try
                 {
-                    File.Delete(HttpContext.Current.Server.MapPath("~/Files/" + fileName));
+                    File.Delete(HttpContext.Current.Server.MapPath("~/Files/" + folderName + fileName));
                     return true;
                 }
                 catch (Exception ex)

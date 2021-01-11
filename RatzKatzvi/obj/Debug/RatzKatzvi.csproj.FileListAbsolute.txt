@@ -405,3 +405,42 @@ C:\Users\User\Desktop\ΓאןΓאןΓאןΓאןRatzKatzvi---server\RatzKatzvi\obj
 C:\Users\User\Desktop\ΓאןΓאןΓאןΓאןRatzKatzvi---server\RatzKatzvi\obj\Debug\RatzKatzvi.csproj.CopyComplete
 C:\Users\User\Desktop\ΓאןΓאןΓאןΓאןRatzKatzvi---server\RatzKatzvi\obj\Debug\RatzKatzvi.dll
 C:\Users\User\Desktop\ΓאןΓאןΓאןΓאןRatzKatzvi---server\RatzKatzvi\obj\Debug\RatzKatzvi.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\RatzKatzvi.dll.config
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\RatzKatzvi.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\RatzKatzvi.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\BL.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\DL.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\Dto.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\EntityFramework.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\EntityFramework.SqlServer.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\GemBox.Document.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\Newtonsoft.Json.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Net.Http.Formatting.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Cors.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.Cors.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.WebHost.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Text.Encoding.CodePages.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\BouncyCastle.Crypto.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\BL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\DL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\DL.dll.config
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\Dto.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\EntityFramework.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\EntityFramework.SqlServer.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\GemBox.Document.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.Cors.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\Newtonsoft.Json.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Net.Http.Formatting.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.WebHost.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Text.Encoding.CodePages.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\obj\Debug\RatzKatzvi.csprojAssemblyReference.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\obj\Debug\RatzKatzvi.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\obj\Debug\RatzKatzvi.csproj.CopyComplete
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\obj\Debug\RatzKatzvi.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\obj\Debug\RatzKatzvi.pdb

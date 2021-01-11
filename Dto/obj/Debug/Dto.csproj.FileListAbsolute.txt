@@ -98,3 +98,26 @@ C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\Dto\obj\Debug\
 C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\Dto\obj\Debug\Dto.csproj.CopyComplete
 C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\Dto\obj\Debug\Dto.dll
 C:\Users\משתמש\Desktop\ratz1\‏‏‏‏RatzKatzvi---server\Dto\obj\Debug\Dto.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\Dto.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\Dto.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\DL.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\EntityFramework.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\GemBox.Document.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\itextsharp.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\DL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\DL.dll.config
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\EntityFramework.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\GemBox.Document.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\itextsharp.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\obj\Debug\Dto.csprojAssemblyReference.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\obj\Debug\Dto.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\obj\Debug\Dto.csproj.CopyComplete
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\obj\Debug\Dto.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\obj\Debug\Dto.pdb

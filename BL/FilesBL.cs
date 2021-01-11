@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -38,17 +39,17 @@ namespace BL
                 return "Error Saving File";
             }
         }
-        public static string[] GetAllFilesWithName(string name, string specificFolder)
+        public static List<string> GetAllFilesWithName(string name, string specificFolder)
         {
             return DL.FilesDL.GetAllFilesWithName(name, specificFolder);
         }
-        public static HttpResponseMessage DownloadFile(string fileName)
+        public static HttpResponseMessage DownloadFile(string fileFolder,string fileName)
         {
-            return DL.FilesDL.DownloadFile(fileName);
+            return DL.FilesDL.DownloadFile(fileFolder, fileName);
         }
-        public static bool Delete(string fileName)
+        public static bool Delete(string folderName, string fileName)
         {
-            return DL.FilesDL.Delete(fileName);
+            return DL.FilesDL.Delete(folderName, fileName);
         }
     }
 }
