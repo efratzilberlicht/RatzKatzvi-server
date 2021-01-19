@@ -2,11 +2,12 @@
 <Schema Namespace="RatzKatzviModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="BookPages">
     <Key>
-      <PropertyRef Name="ItemId" />
-      <PropertyRef Name="BookPage" />
+      <PropertyRef Name="ID" />
     </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ItemId" Type="int" Nullable="false" />
     <Property Name="BookPage" Type="int" Nullable="false" />
+    <Property Name="Sentence" Type="int" Nullable="false" />
     <Property Name="Text" Type="varchar" MaxLength="6000" />
   </EntityType>
   <EntityType Name="Items">
@@ -15,9 +16,11 @@
     </Key>
     <Property Name="ItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ItemKind" Type="int" Nullable="false" />
+    <Property Name="ContextUrl" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="ItemName" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="CreationDate" Type="datetime" Nullable="false" />
     <Property Name="VisitedCounter" Type="int" Nullable="false" />
+    <Property Name="ImgUrl" Type="varchar" MaxLength="200" />
     <Property Name="EnableSearch" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="ItemsSubject">
@@ -41,7 +44,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="UserId" Type="int" Nullable="false" />
-    <Property Name="LastLocation" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LastLocation" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Date" Type="datetime" Nullable="false" />
   </EntityType>
   <EntityType Name="PreSearches">
@@ -60,37 +63,51 @@
     <Property Name="Subject" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="SearchedCounter" Type="int" Nullable="false" />
     <Property Name="Parent" Type="int" Nullable="false" />
+    <Property Name="IconUrl" Type="varchar" MaxLength="200" />
   </EntityType>
   <EntityType Name="Users">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
     <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Name" Type="varchar" MaxLength="50" />
     <Property Name="Phone" Type="varchar" MaxLength="15" />
+    <Property Name="LastLocation" Type="varchar" MaxLength="50" />
   </EntityType>
-  <EntityType Name="WordsLocations">
+  <EntityType Name="WordLocation">
     <Key>
-      <PropertyRef Name="Id" />
+      <PropertyRef Name="ID" />
     </Key>
-    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="SearchOrSubjectId" Type="int" Nullable="false" />
-    <Property Name="WordLocation" Type="int" Nullable="false" />
-    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="BookSenteceID" Type="int" Nullable="false" />
+    <Property Name="SearchId" Type="int" />
+    <Property Name="SubjectId" Type="int" />
     <Property Name="Counter" Type="int" Nullable="false" />
   </EntityType>
-  <Association Name="FK_BookPages_Items">
-    <End Role="Items" Type="Self.Items" Multiplicity="1" />
-    <End Role="BookPages" Type="Self.BookPages" Multiplicity="*" />
+  <Association Name="FK_BookPages_PreSearches1">
+    <End Role="PreSearches" Type="Self.PreSearches" Multiplicity="0..1" />
+    <End Role="WordLocation" Type="Self.WordLocation" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Items">
-        <PropertyRef Name="ItemId" />
+      <Principal Role="PreSearches">
+        <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="BookPages">
-        <PropertyRef Name="ItemId" />
+      <Dependent Role="WordLocation">
+        <PropertyRef Name="SearchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookPages_Subjects1">
+    <End Role="Subjects" Type="Self.Subjects" Multiplicity="0..1" />
+    <End Role="WordLocation" Type="Self.WordLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subjects">
+        <PropertyRef Name="SubjectId" />
+      </Principal>
+      <Dependent Role="WordLocation">
+        <PropertyRef Name="SubjectId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -142,39 +159,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_WordsLocations_Items1">
-    <End Role="Items" Type="Self.Items" Multiplicity="1" />
-    <End Role="WordsLocations" Type="Self.WordsLocations" Multiplicity="*" />
+  <Association Name="FK_WordLocation_BookPages">
+    <End Role="BookPages" Type="Self.BookPages" Multiplicity="1" />
+    <End Role="WordLocation" Type="Self.WordLocation" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Items">
-        <PropertyRef Name="ItemId" />
+      <Principal Role="BookPages">
+        <PropertyRef Name="ID" />
       </Principal>
-      <Dependent Role="WordsLocations">
-        <PropertyRef Name="ItemId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_WordsLocations_PreSearches">
-    <End Role="PreSearches" Type="Self.PreSearches" Multiplicity="1" />
-    <End Role="WordsLocations" Type="Self.WordsLocations" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="PreSearches">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="WordsLocations">
-        <PropertyRef Name="SearchOrSubjectId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_WordsLocations_Subjects">
-    <End Role="Subjects" Type="Self.Subjects" Multiplicity="1" />
-    <End Role="WordsLocations" Type="Self.WordsLocations" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Subjects">
-        <PropertyRef Name="SubjectId" />
-      </Principal>
-      <Dependent Role="WordsLocations">
-        <PropertyRef Name="SearchOrSubjectId" />
+      <Dependent Role="WordLocation">
+        <PropertyRef Name="BookSenteceID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -187,10 +180,14 @@
     <EntitySet Name="PreSearches" EntityType="Self.PreSearches" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Subjects" EntityType="Self.Subjects" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="WordsLocations" EntityType="Self.WordsLocations" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_BookPages_Items" Association="Self.FK_BookPages_Items">
-      <End Role="Items" EntitySet="Items" />
-      <End Role="BookPages" EntitySet="BookPages" />
+    <EntitySet Name="WordLocation" EntityType="Self.WordLocation" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BookPages_PreSearches1" Association="Self.FK_BookPages_PreSearches1">
+      <End Role="PreSearches" EntitySet="PreSearches" />
+      <End Role="WordLocation" EntitySet="WordLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookPages_Subjects1" Association="Self.FK_BookPages_Subjects1">
+      <End Role="Subjects" EntitySet="Subjects" />
+      <End Role="WordLocation" EntitySet="WordLocation" />
     </AssociationSet>
     <AssociationSet Name="FK_Items_Kinds1" Association="Self.FK_Items_Kinds1">
       <End Role="Kinds" EntitySet="Kinds" />
@@ -208,17 +205,9 @@
       <End Role="Users" EntitySet="Users" />
       <End Role="LastLocation" EntitySet="LastLocation" />
     </AssociationSet>
-    <AssociationSet Name="FK_WordsLocations_Items1" Association="Self.FK_WordsLocations_Items1">
-      <End Role="Items" EntitySet="Items" />
-      <End Role="WordsLocations" EntitySet="WordsLocations" />
-    </AssociationSet>
-    <AssociationSet Name="FK_WordsLocations_PreSearches" Association="Self.FK_WordsLocations_PreSearches">
-      <End Role="PreSearches" EntitySet="PreSearches" />
-      <End Role="WordsLocations" EntitySet="WordsLocations" />
-    </AssociationSet>
-    <AssociationSet Name="FK_WordsLocations_Subjects" Association="Self.FK_WordsLocations_Subjects">
-      <End Role="Subjects" EntitySet="Subjects" />
-      <End Role="WordsLocations" EntitySet="WordsLocations" />
+    <AssociationSet Name="FK_WordLocation_BookPages" Association="Self.FK_WordLocation_BookPages">
+      <End Role="BookPages" EntitySet="BookPages" />
+      <End Role="WordLocation" EntitySet="WordLocation" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

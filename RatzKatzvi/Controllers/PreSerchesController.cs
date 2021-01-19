@@ -38,8 +38,8 @@ namespace RatzKatzvi.Controllers
         {
             try
             {
-                PreSerches1 presearch = PreSerchesBL.GetWordIdByName(preSearch);
-                if (presearch.Id != 0)
+               List<PreSerches1> presearch = PreSerchesBL.GetWordIdByName(preSearch);
+                if (preSearch.Count()>0)
                     return Ok(presearch);
                 return Ok(0);
             }

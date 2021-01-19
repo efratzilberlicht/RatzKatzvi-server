@@ -102,7 +102,15 @@ namespace DL
                 db.SaveChanges();
             }
         }
-        //GetById
+        //GetById  
+        //public static List<BookPages> GetBookBySubjectIdOrPresearchId(List<int> subjectIds, List<int> presearchIds)
+        //{
+        //    using (RatzhKatzviEntities1 db = new RatzhKatzviEntities1())
+        //    {
+        //        return db.BookPages.Where(i => subjectIds.Contains(i. ?? 0) || presearchIds.Contains(i.SearchId ?? 0)).OrderBy(book=>book.SubjectId).ThenBy(book=>book.SearchId).ToList();
+        //    }
+        //}
+        //GetById    
         public static List<BookPages> GetBookByItemId(int itemId)
         {
             using (RatzhKatzviEntities1 db = new RatzhKatzviEntities1())

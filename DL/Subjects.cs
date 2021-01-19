@@ -18,17 +18,18 @@ namespace DL
         public Subjects()
         {
             this.ItemsSubject = new HashSet<ItemsSubject>();
-            this.WordsLocations = new HashSet<WordsLocations>();
+            this.WordLocation = new HashSet<WordLocation>();
         }
     
         public int SubjectId { get; set; }
         public string Subject { get; set; }
         public int SearchedCounter { get; set; }
         public int Parent { get; set; }
+        public string IconUrl { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ItemsSubject> ItemsSubject { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<WordsLocations> WordsLocations { get; set; }
+        public virtual ICollection<WordLocation> WordLocation { get; set; }
     }
 }

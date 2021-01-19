@@ -18,8 +18,6 @@ namespace DL
         public Items()
         {
             this.ItemsSubject = new HashSet<ItemsSubject>();
-            this.WordsLocations = new HashSet<WordsLocations>();
-            this.BookPages = new HashSet<BookPages>();
         }
     
         public int ItemId { get; set; }
@@ -28,13 +26,11 @@ namespace DL
         public System.DateTime CreationDate { get; set; }
         public int VisitedCounter { get; set; }
         public bool EnableSearch { get; set; }
+        public string ContextUrl { get; set; }
+        public string ImgUrl { get; set; }
     
         public virtual Kinds Kinds { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ItemsSubject> ItemsSubject { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<WordsLocations> WordsLocations { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BookPages> BookPages { get; set; }
     }
 }

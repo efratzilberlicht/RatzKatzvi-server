@@ -45,11 +45,18 @@ namespace BL
             return PreSearchesConvertor.ConvertToListDto(PreSearchesDL.GetAllPreSerches());
         }
         //GetWordIdByName
-        public static PreSerches1 GetWordIdByName(string preSearch)
+        public static List<PreSerches1> GetWordIdByName(string preSearch)
         {
 
             List<PreSearches> lst = new List<PreSearches>(PreSearchesDL.GetAllPreSerches());
-            return PreSearchesConvertor.ConvertToDto(lst.Where(p => p.PreSearch.Equals(preSearch)).FirstOrDefault());
+            return PreSearchesConvertor.ConvertToListDto(lst.Where(p => p.PreSearch.Equals(preSearch)).ToList());
+        }
+        //GetWordIdByName
+        public static List<PreSerches1> GetWordIdContainsName(string preSearch)
+        {
+
+            List<PreSearches> lst = new List<PreSearches>(PreSearchesDL.GetAllPreSerches());
+            return PreSearchesConvertor.ConvertToListDto(lst.Where(p => p.PreSearch.Contains(preSearch)).ToList());
         }
         //GetAllByItemId
         //public static List<PreSerches1> GetAllByItemId(int itemId)

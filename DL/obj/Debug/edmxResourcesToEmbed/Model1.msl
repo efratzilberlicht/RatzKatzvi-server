@@ -4,6 +4,8 @@
     <EntitySetMapping Name="Items">
       <EntityTypeMapping TypeName="RatzKatzviModel.Items">
         <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="ImgUrl" ColumnName="ImgUrl" />
+          <ScalarProperty Name="ContextUrl" ColumnName="ContextUrl" />
           <ScalarProperty Name="ItemId" ColumnName="ItemId" />
           <ScalarProperty Name="ItemKind" ColumnName="ItemKind" />
           <ScalarProperty Name="ItemName" ColumnName="ItemName" />
@@ -40,17 +42,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="WordsLocations">
-      <EntityTypeMapping TypeName="RatzKatzviModel.WordsLocations">
-        <MappingFragment StoreEntitySet="WordsLocations">
-          <ScalarProperty Name="Counter" ColumnName="Counter" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="SearchOrSubjectId" ColumnName="SearchOrSubjectId" />
-          <ScalarProperty Name="WordLocation" ColumnName="WordLocation" />
-          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="PreSearches">
       <EntityTypeMapping TypeName="RatzKatzviModel.PreSearches">
         <MappingFragment StoreEntitySet="PreSearches">
@@ -63,6 +54,7 @@
     <EntitySetMapping Name="Subjects">
       <EntityTypeMapping TypeName="RatzKatzviModel.Subjects">
         <MappingFragment StoreEntitySet="Subjects">
+          <ScalarProperty Name="IconUrl" ColumnName="IconUrl" />
           <ScalarProperty Name="Parent" ColumnName="Parent" />
           <ScalarProperty Name="SearchedCounter" ColumnName="SearchedCounter" />
           <ScalarProperty Name="Subject" ColumnName="Subject" />
@@ -73,6 +65,7 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="RatzKatzviModel.Users">
         <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="LastLocation1" ColumnName="LastLocation" />
           <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />
@@ -86,8 +79,21 @@
       <EntityTypeMapping TypeName="RatzKatzviModel.BookPages">
         <MappingFragment StoreEntitySet="BookPages">
           <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Sentence" ColumnName="Sentence" />
           <ScalarProperty Name="BookPage" ColumnName="BookPage" />
           <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WordLocation">
+      <EntityTypeMapping TypeName="RatzKatzviModel.WordLocation">
+        <MappingFragment StoreEntitySet="WordLocation">
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+          <ScalarProperty Name="SearchId" ColumnName="SearchId" />
+          <ScalarProperty Name="BookSenteceID" ColumnName="BookSenteceID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

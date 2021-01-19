@@ -34,7 +34,8 @@ namespace BL
 
             Items newItem = ItemsConvertor.ConvertToDL(item);
             ItemsSubjectBL.DeleteItemsSubjectByItemId(newItem.ItemId);
-            WordsLocationsBL.DeleteWordsLocationsByItemId(newItem.ItemId);
+            //TODO
+            //WordsLocationsBL.DeleteWordsLocationsByItemId(newItem.ItemId);
             BookPagesBL.DeleteBookByItemId(newItem.ItemId);
 
             ItemsDL.DeleteItem(newItem);
@@ -65,11 +66,17 @@ namespace BL
             return ItemsConvertor.ConvertToListDto(ItemsDL.GetAllItems());
         }
         //GetAllByKind
-        public static List<Items1> GetAllByKind(int kindId, int pageNum)
+        public static List<Items1> GetAllVideos(int kindId, int pageNum)
         {
             const int numVideoInPage = 10;
             List<Items> lst = new List<Items>(ItemsDL.GetAllItems());
             return ItemsConvertor.ConvertToListDto(lst.Where(i => i.ItemKind == kindId).Skip(numVideoInPage * pageNum).Take(numVideoInPage).ToList());
+        }
+        //TODO
+        public static List<Items1> GetAllByKind(int kindId)
+        {
+            List<Items> lst = new List<Items>(ItemsDL.GetAllItems());
+            return ItemsConvertor.ConvertToListDto(lst.Where(i => i.ItemKind == kindId).ToList());
         }
 
         // GetAllBySubjectId

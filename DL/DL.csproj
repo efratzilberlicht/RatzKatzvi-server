@@ -87,6 +87,7 @@
     <Compile Include="Kinds.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="WordLocationDL.cs" />
     <Compile Include="KindsDL.cs" />
     <Compile Include="LastLocation.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -121,10 +122,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="UsersDL.cs" />
-    <Compile Include="WordsLocations.cs">
+    <Compile Include="WordLocation.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="WordsLocationsDL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />

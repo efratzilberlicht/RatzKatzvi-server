@@ -85,16 +85,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookPagesBL.cs" />
+    <Compile Include="BookPagesBL - Copy.cs" />
+    <Compile Include="WordLocationBL.cs" />
     <Compile Include="Convertors\BookPagesConvertor.cs" />
     <Compile Include="Convertors\ItemsConvertor.cs" />
     <Compile Include="Convertors\ItemsSubjectConvertor.cs" />
     <Compile Include="Convertors\KindsConvertor.cs" />
     <Compile Include="Convertors\LastLocationConvertor.cs" />
     <Compile Include="Convertors\PreSearchesConvertor.cs" />
+    <Compile Include="Convertors\WordLocationConvertor.cs" />
     <Compile Include="Convertors\SubjectsConvertor.cs" />
     <Compile Include="Convertors\UsersConvertor.cs" />
-    <Compile Include="Convertors\WordsLocationsConvertor.cs" />
     <Compile Include="FilesBL.cs" />
     <Compile Include="ItemsSubjectBL.cs" />
     <Compile Include="KindsBL.cs" />
@@ -105,7 +106,6 @@
     <Compile Include="SearchesBL.cs" />
     <Compile Include="SubjectsBL.cs" />
     <Compile Include="UsersBL.cs" />
-    <Compile Include="WordsLocationsBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -12,8 +12,8 @@
     <Property Name="EnableSearch" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="Kinds" Relationship="Self.FK_Items_Kinds1" FromRole="Items" ToRole="Kinds" />
     <NavigationProperty Name="ItemsSubject" Relationship="Self.FK_ItemsSubject_Items1" FromRole="Items" ToRole="ItemsSubject" />
-    <NavigationProperty Name="WordsLocations" Relationship="Self.FK_WordsLocations_Items1" FromRole="Items" ToRole="WordsLocations" />
-    <NavigationProperty Name="BookPages" Relationship="RatzKatzviModel.FK_BookPages_Items" FromRole="Items" ToRole="BookPages" />
+    <Property Name="ContextUrl" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ImgUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="ItemsSubject">
     <Key>
@@ -39,22 +39,9 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="UserId" Type="Int32" Nullable="false" />
-    <Property Name="LastLocation1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastLocation1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="Users" Relationship="RatzKatzviModel.FK_LastLocation_Users1" FromRole="LastLocation" ToRole="Users" />
-  </EntityType>
-  <EntityType Name="WordsLocations">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="SearchOrSubjectId" Type="Int32" Nullable="false" />
-    <Property Name="WordLocation" Type="Int32" Nullable="false" />
-    <Property Name="ItemId" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Items" Relationship="Self.FK_WordsLocations_Items1" FromRole="WordsLocations" ToRole="Items" />
-    <NavigationProperty Name="PreSearches" Relationship="RatzKatzviModel.FK_WordsLocations_PreSearches" FromRole="WordsLocations" ToRole="PreSearches" />
-    <NavigationProperty Name="Subjects" Relationship="RatzKatzviModel.FK_WordsLocations_Subjects" FromRole="WordsLocations" ToRole="Subjects" />
-    <Property Name="Counter" Type="Int32" Nullable="false" />
   </EntityType>
   <Association Name="FK_Items_Kinds1">
     <End Role="Kinds" Type="Self.Kinds" Multiplicity="1" />
@@ -80,24 +67,11 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_WordsLocations_Items1">
-    <End Role="Items" Type="Self.Items" Multiplicity="1" />
-    <End Role="WordsLocations" Type="Self.WordsLocations" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Items">
-        <PropertyRef Name="ItemId" />
-      </Principal>
-      <Dependent Role="WordsLocations">
-        <PropertyRef Name="ItemId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="RatzhKatzviEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Items" EntityType="Self.Items" />
     <EntitySet Name="ItemsSubject" EntityType="Self.ItemsSubject" />
     <EntitySet Name="Kinds" EntityType="Self.Kinds" />
     <EntitySet Name="LastLocation" EntityType="Self.LastLocation" />
-    <EntitySet Name="WordsLocations" EntityType="Self.WordsLocations" />
     <AssociationSet Name="FK_Items_Kinds1" Association="Self.FK_Items_Kinds1">
       <End Role="Kinds" EntitySet="Kinds" />
       <End Role="Items" EntitySet="Items" />
@@ -106,23 +80,11 @@
       <End Role="Items" EntitySet="Items" />
       <End Role="ItemsSubject" EntitySet="ItemsSubject" />
     </AssociationSet>
-    <AssociationSet Name="FK_WordsLocations_Items1" Association="Self.FK_WordsLocations_Items1">
-      <End Role="Items" EntitySet="Items" />
-      <End Role="WordsLocations" EntitySet="WordsLocations" />
-    </AssociationSet>
     <EntitySet Name="PreSearches" EntityType="RatzKatzviModel.PreSearches" />
-    <AssociationSet Name="FK_WordsLocations_PreSearches" Association="RatzKatzviModel.FK_WordsLocations_PreSearches">
-      <End Role="PreSearches" EntitySet="PreSearches" />
-      <End Role="WordsLocations" EntitySet="WordsLocations" />
-    </AssociationSet>
     <EntitySet Name="Subjects" EntityType="RatzKatzviModel.Subjects" />
     <AssociationSet Name="FK_ItemsSubject_Subjects" Association="RatzKatzviModel.FK_ItemsSubject_Subjects">
       <End Role="Subjects" EntitySet="Subjects" />
       <End Role="ItemsSubject" EntitySet="ItemsSubject" />
-    </AssociationSet>
-    <AssociationSet Name="FK_WordsLocations_Subjects" Association="RatzKatzviModel.FK_WordsLocations_Subjects">
-      <End Role="Subjects" EntitySet="Subjects" />
-      <End Role="WordsLocations" EntitySet="WordsLocations" />
     </AssociationSet>
     <EntitySet Name="Users" EntityType="RatzKatzviModel.Users" />
     <AssociationSet Name="FK_LastLocation_Users1" Association="RatzKatzviModel.FK_LastLocation_Users1">
@@ -130,9 +92,18 @@
       <End Role="LastLocation" EntitySet="LastLocation" />
     </AssociationSet>
     <EntitySet Name="BookPages" EntityType="RatzKatzviModel.BookPages" />
-    <AssociationSet Name="FK_BookPages_Items" Association="RatzKatzviModel.FK_BookPages_Items">
-      <End Role="Items" EntitySet="Items" />
+    <EntitySet Name="WordLocation" EntityType="RatzKatzviModel.WordLocation" />
+    <AssociationSet Name="FK_WordLocation_BookPages" Association="RatzKatzviModel.FK_WordLocation_BookPages">
       <End Role="BookPages" EntitySet="BookPages" />
+      <End Role="WordLocation" EntitySet="WordLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookPages_PreSearches1" Association="RatzKatzviModel.FK_BookPages_PreSearches1">
+      <End Role="PreSearches" EntitySet="PreSearches" />
+      <End Role="WordLocation" EntitySet="WordLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookPages_Subjects1" Association="RatzKatzviModel.FK_BookPages_Subjects1">
+      <End Role="Subjects" EntitySet="Subjects" />
+      <End Role="WordLocation" EntitySet="WordLocation" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="PreSearches">
@@ -142,20 +113,8 @@
     <Property Name="Id" Type="Int32" Nullable="false" />
     <Property Name="PreSearch" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="SearchedCounter" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="WordsLocations" Relationship="RatzKatzviModel.FK_WordsLocations_PreSearches" FromRole="PreSearches" ToRole="WordsLocations" />
+    <NavigationProperty Name="WordLocation" Relationship="RatzKatzviModel.FK_BookPages_PreSearches1" FromRole="PreSearches" ToRole="WordLocation" />
   </EntityType>
-  <Association Name="FK_WordsLocations_PreSearches">
-    <End Type="RatzKatzviModel.PreSearches" Role="PreSearches" Multiplicity="1" />
-    <End Type="RatzKatzviModel.WordsLocations" Role="WordsLocations" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="PreSearches">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="WordsLocations">
-        <PropertyRef Name="SearchOrSubjectId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityType Name="Subjects">
     <Key>
       <PropertyRef Name="SubjectId" />
@@ -165,7 +124,8 @@
     <Property Name="SearchedCounter" Type="Int32" Nullable="false" />
     <Property Name="Parent" Type="Int32" Nullable="false" />
     <NavigationProperty Name="ItemsSubject" Relationship="RatzKatzviModel.FK_ItemsSubject_Subjects" FromRole="Subjects" ToRole="ItemsSubject" />
-    <NavigationProperty Name="WordsLocations" Relationship="RatzKatzviModel.FK_WordsLocations_Subjects" FromRole="Subjects" ToRole="WordsLocations" />
+    <Property Name="IconUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="WordLocation" Relationship="RatzKatzviModel.FK_BookPages_Subjects1" FromRole="Subjects" ToRole="WordLocation" />
   </EntityType>
   <Association Name="FK_ItemsSubject_Subjects">
     <End Type="RatzKatzviModel.Subjects" Role="Subjects" Multiplicity="1" />
@@ -179,29 +139,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_WordsLocations_Subjects">
-    <End Type="RatzKatzviModel.Subjects" Role="Subjects" Multiplicity="1" />
-    <End Type="RatzKatzviModel.WordsLocations" Role="WordsLocations" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Subjects">
-        <PropertyRef Name="SubjectId" />
-      </Principal>
-      <Dependent Role="WordsLocations">
-        <PropertyRef Name="SearchOrSubjectId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityType Name="Users">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="LastLocation" Relationship="RatzKatzviModel.FK_LastLocation_Users1" FromRole="Users" ToRole="LastLocation" />
+    <Property Name="LastLocation1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <Association Name="FK_LastLocation_Users1">
     <End Type="RatzKatzviModel.Users" Role="Users" Multiplicity="1" />
@@ -217,23 +166,61 @@
   </Association>
   <EntityType Name="BookPages">
     <Key>
-      <PropertyRef Name="ItemId" />
-      <PropertyRef Name="BookPage" />
+      <PropertyRef Name="ID" />
     </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="ItemId" Type="Int32" Nullable="false" />
     <Property Name="BookPage" Type="Int32" Nullable="false" />
+    <Property Name="Sentence" Type="Int32" Nullable="false" />
     <Property Name="Text" Type="String" MaxLength="6000" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Items" Relationship="RatzKatzviModel.FK_BookPages_Items" FromRole="BookPages" ToRole="Items" />
+    <NavigationProperty Name="WordLocation" Relationship="RatzKatzviModel.FK_WordLocation_BookPages" FromRole="BookPages" ToRole="WordLocation" />
   </EntityType>
-  <Association Name="FK_BookPages_Items">
-    <End Type="RatzKatzviModel.Items" Role="Items" Multiplicity="1" />
-    <End Type="RatzKatzviModel.BookPages" Role="BookPages" Multiplicity="*" />
+  <EntityType Name="WordLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="BookSenteceID" Type="Int32" Nullable="false" />
+    <Property Name="SearchId" Type="Int32" />
+    <Property Name="SubjectId" Type="Int32" />
+    <Property Name="Counter" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BookPages" Relationship="RatzKatzviModel.FK_WordLocation_BookPages" FromRole="WordLocation" ToRole="BookPages" />
+    <NavigationProperty Name="PreSearches" Relationship="RatzKatzviModel.FK_BookPages_PreSearches1" FromRole="WordLocation" ToRole="PreSearches" />
+    <NavigationProperty Name="Subjects" Relationship="RatzKatzviModel.FK_BookPages_Subjects1" FromRole="WordLocation" ToRole="Subjects" />
+  </EntityType>
+  <Association Name="FK_WordLocation_BookPages">
+    <End Type="RatzKatzviModel.BookPages" Role="BookPages" Multiplicity="1" />
+    <End Type="RatzKatzviModel.WordLocation" Role="WordLocation" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Items">
-        <PropertyRef Name="ItemId" />
+      <Principal Role="BookPages">
+        <PropertyRef Name="ID" />
       </Principal>
-      <Dependent Role="BookPages">
-        <PropertyRef Name="ItemId" />
+      <Dependent Role="WordLocation">
+        <PropertyRef Name="BookSenteceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookPages_PreSearches1">
+    <End Type="RatzKatzviModel.PreSearches" Role="PreSearches" Multiplicity="0..1" />
+    <End Type="RatzKatzviModel.WordLocation" Role="WordLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PreSearches">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="WordLocation">
+        <PropertyRef Name="SearchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookPages_Subjects1">
+    <End Type="RatzKatzviModel.Subjects" Role="Subjects" Multiplicity="0..1" />
+    <End Type="RatzKatzviModel.WordLocation" Role="WordLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subjects">
+        <PropertyRef Name="SubjectId" />
+      </Principal>
+      <Dependent Role="WordLocation">
+        <PropertyRef Name="SubjectId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

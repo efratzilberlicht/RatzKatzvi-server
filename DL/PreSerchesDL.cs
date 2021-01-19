@@ -7,16 +7,17 @@ namespace DL
     public static class PreSearchesDL
     {
         //Add
-        public static void AddPreSerch(PreSearches preSearch)
+        public static PreSearches AddPreSerch(PreSearches preSearch)
         {
             using (RatzhKatzviEntities1 db = new RatzhKatzviEntities1())
             {
                 PreSearches isExist = db.PreSearches.FirstOrDefault(x => x.Id == preSearch.Id);
                 if (isExist == null)
                 {
-                    db.PreSearches.Add(preSearch);
+                  isExist=  db.PreSearches.Add(preSearch);
                     db.SaveChanges();
                 }
+                return isExist;
             }
         }
         //Delete

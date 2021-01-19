@@ -45,6 +45,12 @@ namespace BL
         {
             return BookPagesConvertor.ConvertToListDto(BookPagesDL.GetBookByItemId(itemId));
         }
+        //TODO
+        //GetById
+        //public static List<BookPages1> GetBookBySubjectId(List< int> subjectIds)
+        //{
+        //    return BookPagesConvertor.ConvertToListDto(BookPagesDL.GetBookByItemId(itemId));
+        //}
         //GetAll
         public static List<BookPages1> GetAllBooks()
         {

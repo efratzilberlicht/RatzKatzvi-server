@@ -9,9 +9,8 @@ namespace DL
 {
     public static class SearchesDL
     {
-        public static  List<BookPages> SearchInBooks(string text)
+        public static List<WordLocation> SearchInBooks(string text)
         {
-            List<BookPages> searchResultPages = new List<BookPages>();
             if (text.Length > 0)
             {
                 string[] searchWords = text.Split(' ');
@@ -22,27 +21,34 @@ namespace DL
 
                 List<Items> items = ItemsDL.GetAllItems().Where(item => true == item.EnableSearch).ToList();
                 List<BookPages> bookPages = new List<BookPages>();
+                List<WordLocation> searchResultWordLocations = new List<WordLocation>();
+                bool flag = false;
+                PreSearches newPreSearch = new PreSearches();
                 foreach (var item in items)
                 {
                     bookPages = BookPagesDL.GetBookByItemId(item.ItemId);
                     bookPages = BookPagesDL.SearchText(bookPages, rgx);
                     if (bookPages.Count > 0)
-                        searchResultPages.AddRange(bookPages);
-                }
-            }
-            return searchResultPages;
-        }
-        //public static WordsLocations SearchInPreSearch(string text)
-        //{
-        //    List<PreSearches> preSearches = PreSearchesDL.GetAllPreSerches().Where(pre => pre.PreSearch == text).ToList();
-        //    preSearches.ForEach(pre =>
-        //    {
-        //        pre.SearchedCounter++;
-        //        PreSearchesDL.UpdatePreSerches(pre);
-        //        //pre.WordsLocations.First().
-        //    });
+                    {
+                        if (!flag)
+                        {
+                            flag = true;
+                            newPreSearch = PreSearchesDL.AddPreSerch(new PreSearches { PreSearch = text, SearchedCounter = 1 });
+                        }
+                        if (newPreSearch != default(PreSearches))
+                        {
+                            searchResultWordLocations.AddRange(WordLocationDL.Create_List_WordLocationFromBooPage(bookPages, newPreSearch.Id));
+                        }
+                    }
 
-        //}
+                }
+                if (searchResultWordLocations != default(List<WordLocation>))
+                    WordLocationDL.AddList(searchResultWordLocations);
+                return searchResultWordLocations;
+            }
+            return new List<WordLocation>();
+
+        }
     }
 
 

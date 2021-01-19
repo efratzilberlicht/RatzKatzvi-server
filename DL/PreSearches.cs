@@ -17,7 +17,7 @@ namespace DL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public PreSearches()
         {
-            this.WordsLocations = new HashSet<WordsLocations>();
+            this.WordLocation = new HashSet<WordLocation>();
         }
     
         public int Id { get; set; }
@@ -25,6 +25,6 @@ namespace DL
         public int SearchedCounter { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<WordsLocations> WordsLocations { get; set; }
+        public virtual ICollection<WordLocation> WordLocation { get; set; }
     }
 }

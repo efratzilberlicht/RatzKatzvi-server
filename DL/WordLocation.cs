@@ -12,15 +12,15 @@ namespace DL
     using System;
     using System.Collections.Generic;
     
-    public partial class WordsLocations
+    public partial class WordLocation
     {
-        public int Id { get; set; }
-        public int SearchOrSubjectId { get; set; }
-        public int WordLocation { get; set; }
-        public int ItemId { get; set; }
+        public int ID { get; set; }
+        public int BookSenteceID { get; set; }
+        public Nullable<int> SearchId { get; set; }
+        public Nullable<int> SubjectId { get; set; }
         public int Counter { get; set; }
     
-        public virtual Items Items { get; set; }
+        public virtual BookPages BookPages { get; set; }
         public virtual PreSearches PreSearches { get; set; }
         public virtual Subjects Subjects { get; set; }
     }

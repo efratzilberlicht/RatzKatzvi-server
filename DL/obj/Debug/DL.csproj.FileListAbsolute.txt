@@ -135,8 +135,8 @@ C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\b
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\bin\Debug\itextsharp.xml
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\bin\Debug\System.Text.Encoding.CodePages.xml
-C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\obj\Debug\DL.csprojAssemblyReference.cache
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\obj\Debug\DL.csproj.CopyComplete
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\obj\Debug\DL.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\obj\Debug\DL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\obj\Debug\DL.csprojAssemblyReference.cache

@@ -14,10 +14,19 @@ namespace DL
     
     public partial class BookPages
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public BookPages()
+        {
+            this.WordLocation = new HashSet<WordLocation>();
+        }
+    
+        public int ID { get; set; }
         public int ItemId { get; set; }
         public int BookPage { get; set; }
+        public int Sentence { get; set; }
         public string Text { get; set; }
     
-        public virtual Items Items { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<WordLocation> WordLocation { get; set; }
     }
 }

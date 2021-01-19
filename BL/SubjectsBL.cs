@@ -49,6 +49,12 @@ namespace BL
             List<Subjects> lst = new List<Subjects>(SubjectsDL.GetAllSubjects());
             return SubjectsConvertor.ConvertToDto(lst.Where(k => k.Subject.Equals(subject)).FirstOrDefault());
         }
+        //GetContainName
+        public static List<Subjects1> GetSubjectContainText(string text)
+        {
+            List<Subjects> lst = new List<Subjects>(SubjectsDL.GetAllSubjects());
+            return SubjectsConvertor.ConvertToListDto(lst.Where(k => k.Subject.Contains(text)).ToList());
+        }
         //GetAll
         public static List<Subjects1> GetAllSubjects()
         {

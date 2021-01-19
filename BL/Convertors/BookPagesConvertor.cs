@@ -20,7 +20,9 @@ namespace BL.Convertors
                     {
                         BookPage = b.BookPage,
                         ItemId = b.ItemId,
-                        Text = b.Text
+                        Text = b.Text,
+                        ID=b.ID,
+                        Sentence=b.Sentence
                     };
                 }
                 catch
@@ -37,7 +39,9 @@ namespace BL.Convertors
             {
                 BookPage = b.BookPage,
                 ItemId = b.ItemId,
-                Text = b.Text
+                Text = b.Text,
+                ID = b.ID,
+                Sentence = b.Sentence
             };
         }
         public static List<BookPages1> ConvertToListDto(List<BookPages> lst)

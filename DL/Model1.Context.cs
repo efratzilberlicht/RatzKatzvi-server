@@ -29,10 +29,10 @@ namespace DL
         public virtual DbSet<ItemsSubject> ItemsSubject { get; set; }
         public virtual DbSet<Kinds> Kinds { get; set; }
         public virtual DbSet<LastLocation> LastLocation { get; set; }
-        public virtual DbSet<WordsLocations> WordsLocations { get; set; }
         public virtual DbSet<PreSearches> PreSearches { get; set; }
         public virtual DbSet<Subjects> Subjects { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<BookPages> BookPages { get; set; }
+        public virtual DbSet<WordLocation> WordLocation { get; set; }
     }
 }

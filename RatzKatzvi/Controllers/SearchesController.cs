@@ -1,5 +1,5 @@
 ﻿using System;
-//using Dto;
+using Dto;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -17,8 +17,8 @@ namespace RatzKatzvi.Controllers
         public IHttpActionResult SearchText(string text)
         {
             try
-            {//BookPagesBL.GetAllBooks()
-                return Ok(BookPagesBL.GetAllBooks());
+            {
+                return Ok(SearchesBL.SearchText(text));
             }
             catch (Exception ex)
             {

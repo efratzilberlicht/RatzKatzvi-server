@@ -60,13 +60,29 @@ namespace RatzKatzvi.Controllers
                 return NotFound();
             }
         }
-        //GetAllByKind
-        [Route("GetAllByKind/{kindId}/{pageNum}")]
-        public IHttpActionResult GetAllByKind(int kindId, int pageNum = 0)
+        //GetAllVideos
+        [Route("GetAllVideos/{kindId}/{pageNum}")]
+        public IHttpActionResult GetAllVideos(int kindId,int pageNum)
         {
             try
             {
-                List<Items1> items = ItemsBL.GetAllByKind(kindId, pageNum);
+                List<Items1> items = ItemsBL.GetAllVideos(kindId,pageNum);
+                if (items.Count == 0)
+                    throw new Exception();
+                return Ok(items);
+            }
+            catch (Exception ex)
+            {
+                return NotFound();
+            }
+        }
+        //GetAllByKind
+        [Route("GetAllByKind/{kindId}")]
+        public IHttpActionResult GetAllByKind(int kindId)
+        {
+            try
+            {
+                List<Items1> items = ItemsBL.GetAllByKind(kindId);
                 if (items.Count == 0)
                     throw new Exception();
                 return Ok(items);
