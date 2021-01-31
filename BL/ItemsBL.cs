@@ -108,11 +108,11 @@ namespace BL
                 List<Items> lst = new List<Items>(ItemsDL.GetAllItems().Where(i => i.ItemsSubject.FirstOrDefault(s => s.SubjectId == subjectId) != null));
                 ItemsForSubject itemsForSubject = new ItemsForSubject();
                 var subjectName = SubjectsDL.GeSubjectById(subjectId).Subject;
-                var folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}Bookmarks";
+                var folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}{EnumItemsKinds.Bookmarks}";
                 if (Directory.Exists(folderpath) && File.Exists($"{folderpath}/{subjectName}"))
                     itemsForSubject.bookmarksPath = $"{folderpath}/{subjectName}";
 
-                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}Book";
+                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}{EnumItemsKinds.Book}";
                 if (Directory.Exists(folderpath) && File.Exists($"{ folderpath}/{subjectName}"))
                     itemsForSubject.bookPath = $"{folderpath}/{subjectName}";
 
@@ -120,15 +120,15 @@ namespace BL
                 if (Directory.Exists(folderpath) && File.Exists($"{ folderpath}/{subjectName}"))
                     itemsForSubject.bookPath = $"{folderpath}/{subjectName}";
 
-                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}Lesson";
+                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}{EnumItemsKinds.Lesson}";
                 if (Directory.Exists(folderpath) && File.Exists($"{ folderpath}/{subjectName}"))
                     itemsForSubject.bookPath = $"{folderpath}/{subjectName}";
 
-                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}Video";
+                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}{EnumItemsKinds.Video}";
                 if (Directory.Exists(folderpath) && File.Exists($"{ folderpath}/{subjectName}"))
                     itemsForSubject.bookPath = $"{folderpath}/{subjectName}";
 
-                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}LessonSummary";
+                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}{EnumItemsKinds.LessonSummary}";
                 if (Directory.Exists(folderpath) && File.Exists($"{ folderpath}/{subjectName}"))
                     itemsForSubject.lessonSummary = FilesDL.GetTextFromFile($"{folderpath}/{subjectName}");
                 return itemsForSubject;
