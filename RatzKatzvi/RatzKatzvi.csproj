@@ -143,6 +143,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Files\Bookmarks\" />
+    <Folder Include="Files\LessonSummary\" />
+    <Folder Include="Files\Lesson\" />
+    <Folder Include="Files\Video\" />
     <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>

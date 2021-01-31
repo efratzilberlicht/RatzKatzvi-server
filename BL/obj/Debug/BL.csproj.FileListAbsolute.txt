@@ -109,7 +109,6 @@ C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\b
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\itextsharp.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\System.Text.Encoding.CodePages.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\DL.pdb
@@ -126,10 +125,11 @@ C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\b
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\System.Text.Encodings.Web.xml
-C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\itextsharp.xml
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\System.Text.Encoding.CodePages.xml
-C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\obj\Debug\BL.csprojAssemblyReference.cache
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\obj\Debug\BL.csproj.CopyComplete
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\obj\Debug\BL.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\obj\Debug\BL.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\SautinSoft.Document.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\BL\bin\Debug\SautinSoft.Document.xml

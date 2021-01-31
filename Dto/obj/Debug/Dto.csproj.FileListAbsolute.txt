@@ -118,6 +118,6 @@ C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\obj\Debug\Dto.csproj.CopyComplete
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\obj\Debug\Dto.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\obj\Debug\Dto.pdb
-C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\itextsharp.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\itextsharp.xml
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\SautinSoft.Document.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Dto\bin\Debug\SautinSoft.Document.xml

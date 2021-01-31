@@ -140,3 +140,5 @@ C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\o
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\obj\Debug\DL.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\obj\Debug\DL.pdb
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\bin\Debug\SautinSoft.Document.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\DL\bin\Debug\SautinSoft.Document.xml

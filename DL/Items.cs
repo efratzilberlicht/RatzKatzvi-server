@@ -22,12 +22,12 @@ namespace DL
     
         public int ItemId { get; set; }
         public int ItemKind { get; set; }
+        public string ContextUrl { get; set; }
         public string ItemName { get; set; }
         public System.DateTime CreationDate { get; set; }
-        public int VisitedCounter { get; set; }
-        public bool EnableSearch { get; set; }
-        public string ContextUrl { get; set; }
+        public Nullable<int> VisitedCounter { get; set; }
         public string ImgUrl { get; set; }
+        public bool EnableSearch { get; set; }
     
         public virtual Kinds Kinds { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

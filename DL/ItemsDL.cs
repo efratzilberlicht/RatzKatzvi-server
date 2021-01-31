@@ -14,12 +14,25 @@ namespace DL
         //Add
         public static void AddItem(Items item)
         {
-            using (RatzhKatzviEntities1 db = new RatzhKatzviEntities1())
+            try
             {
-                if (item.CreationDate == null)
-                    item.CreationDate = DateTime.Now;
-                db.Items.Add(item);
-                db.SaveChanges();
+                using (RatzhKatzviEntities1 db = new RatzhKatzviEntities1())
+                {
+                    try { 
+                    if (item.CreationDate == default(DateTime))
+                        item.CreationDate = DateTime.Now;
+                    
+                    db.Items.Add(item);
+                    db.SaveChanges();
+                    }catch(Exception ex)
+                    {
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
             }
         }
         //Update
@@ -37,7 +50,7 @@ namespace DL
                         db.SaveChanges();
                     }
                 }
-                catch(Exception ex) { }
+                catch (Exception ex) { }
             }
         }
 

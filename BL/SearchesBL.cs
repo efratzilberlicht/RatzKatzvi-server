@@ -15,6 +15,7 @@ namespace BL
             List<PreSerches1> presearches = new List<PreSerches1>();
             List<int> subjectIds = new List<int>();
             List<int> presearcheIds = new List<int>();
+            
             presearches = PreSerchesBL.GetWordIdByName(text);
             subjects.Add(SubjectsBL.GetSubjectByName(text));
             subjects.AddRange(SubjectsBL.GetSubjectContainText(text));

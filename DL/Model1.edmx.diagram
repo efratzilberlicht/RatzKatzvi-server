@@ -4,23 +4,23 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="10d45d79864449c68798d3bfb8dd384d" Name="Diagram1">
-        <EntityTypeShape EntityType="RatzKatzviModel.Items" Width="1.5" PointX="0.5" PointY="6.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="RatzKatzviModel.ItemsSubject" Width="1.5" PointX="0.5" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="RatzKatzviModel.Kinds" Width="1.5" PointX="2.875" PointY="9" IsExpanded="true" />
-        <EntityTypeShape EntityType="RatzKatzviModel.LastLocation" Width="1.5" PointX="8" PointY="2.5" IsExpanded="true" />
-        <AssociationConnector Association="RatzKatzviModel.FK_Items_Kinds1" ManuallyRouted="false" />
-        <AssociationConnector Association="RatzKatzviModel.FK_ItemsSubject_Items1" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="RatzKatzviModel.PreSearches" Width="1.5" PointX="6" PointY="5.625" />
-        <EntityTypeShape EntityType="RatzKatzviModel.Subjects" Width="1.5" PointX="2.75" PointY="2" />
-        <AssociationConnector Association="RatzKatzviModel.FK_ItemsSubject_Subjects" />
-        <EntityTypeShape EntityType="RatzKatzviModel.Users" Width="1.5" PointX="5.75" PointY="2.25" />
-        <AssociationConnector Association="RatzKatzviModel.FK_LastLocation_Users1" />
-        <EntityTypeShape EntityType="RatzKatzviModel.BookPages" Width="1.5" PointX="5.875" PointY="7.875" />
-        <EntityTypeShape EntityType="RatzKatzviModel.WordLocation" Width="1.5" PointX="3.875" PointY="5.75" />
-        <AssociationConnector Association="RatzKatzviModel.FK_WordLocation_BookPages" />
-        <AssociationConnector Association="RatzKatzviModel.FK_BookPages_PreSearches1" />
-        <AssociationConnector Association="RatzKatzviModel.FK_BookPages_Subjects1" />
+      <Diagram DiagramId="e6cbca750d314485837cb55af1bdbc14" Name="Diagram1">
+        <EntityTypeShape EntityType="RatzhKatzviModel.BookPages" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="RatzhKatzviModel.Items" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RatzhKatzviModel.ItemsSubject" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="RatzhKatzviModel.Kinds" Width="1.5" PointX="1.5" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RatzhKatzviModel.LastLocation" Width="1.5" PointX="8" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RatzhKatzviModel.PreSearches" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RatzhKatzviModel.Subjects" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RatzhKatzviModel.Users" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RatzhKatzviModel.WordLocation" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="RatzhKatzviModel.FK_WordLocation_BookPages" ManuallyRouted="false" />
+        <AssociationConnector Association="RatzhKatzviModel.FK_Items_Kinds1" ManuallyRouted="false" />
+        <AssociationConnector Association="RatzhKatzviModel.FK_ItemsSubject_Items1" ManuallyRouted="false" />
+        <AssociationConnector Association="RatzhKatzviModel.FK_ItemsSubject_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="RatzhKatzviModel.FK_LastLocation_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="RatzhKatzviModel.FK_BookPages_PreSearches1" ManuallyRouted="false" />
+        <AssociationConnector Association="RatzhKatzviModel.FK_BookPages_Subjects1" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

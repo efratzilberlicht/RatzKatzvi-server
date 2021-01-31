@@ -410,7 +410,6 @@ C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Ratz
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\RatzKatzvi.dll.config
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\RatzKatzvi.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\RatzKatzvi.pdb
-C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\BL.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\DL.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\Dto.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\EntityFramework.dll
@@ -423,7 +422,6 @@ C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Ratz
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.Cors.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.WebHost.dll
-C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\itextsharp.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Text.Encoding.CodePages.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\BouncyCastle.Crypto.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Runtime.CompilerServices.Unsafe.dll
@@ -440,9 +438,11 @@ C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\Ratz
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.xml
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Web.Http.WebHost.xml
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\itextsharp.xml
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Text.Encoding.CodePages.xml
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\obj\Debug\RatzKatzvi.csproj.CopyComplete
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\obj\Debug\RatzKatzvi.dll
 C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\obj\Debug\RatzKatzvi.pdb
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\BL.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\SautinSoft.Document.dll
+C:\Users\משתמש\Desktop\בתיה\רץ כצבי\קוד\RatzKatzvi-server\RatzKatzvi\bin\SautinSoft.Document.xml

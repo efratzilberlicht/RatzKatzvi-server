@@ -17,7 +17,7 @@ namespace DL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Users()
         {
-            this.LastLocation = new HashSet<LastLocation>();
+            this.LastLocation1 = new HashSet<LastLocation>();
         }
     
         public int Id { get; set; }
@@ -26,9 +26,9 @@ namespace DL
         public string UserName { get; set; }
         public string Name { get; set; }
         public string Phone { get; set; }
-        public string LastLocation1 { get; set; }
+        public string LastLocation { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<LastLocation> LastLocation { get; set; }
+        public virtual ICollection<LastLocation> LastLocation1 { get; set; }
     }
 }

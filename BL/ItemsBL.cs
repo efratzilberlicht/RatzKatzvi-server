@@ -3,9 +3,11 @@ using DL;
 using Dto;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace BL
 {
@@ -84,6 +86,62 @@ namespace BL
         {
             List<Items> lst = new List<Items>(ItemsDL.GetAllItems());
             return ItemsConvertor.ConvertToListDto(lst.Where(i => i.ItemsSubject != null && i.ItemsSubject?.Where(x => x.SubjectId == subjectId).Count() > 0).ToList());
+        }
+        //GetItemsForAllSubjects
+        public static List<ItemsForSubject> GetItemsForAllSubjects()
+        {
+            List<Subjects> subjects = SubjectsDL.GetAllSubjects();
+            List<ItemsForSubject> itemsForSubjects = new List<ItemsForSubject>();
+            foreach (var subject in subjects)
+            {
+                var result = GetItemsBySubjectId(subject.SubjectId);
+                if (result != null)
+                    itemsForSubjects.Add(result);
+            }
+            return itemsForSubjects;
+        }
+        //GetItemsBySubjectId
+        public static ItemsForSubject GetItemsBySubjectId(int subjectId)
+        {
+            try
+            {
+                List<Items> lst = new List<Items>(ItemsDL.GetAllItems().Where(i => i.ItemsSubject.FirstOrDefault(s => s.SubjectId == subjectId) != null));
+                ItemsForSubject itemsForSubject = new ItemsForSubject();
+                var subjectName = SubjectsDL.GeSubjectById(subjectId).Subject;
+                var folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}Bookmarks";
+                if (Directory.Exists(folderpath) && File.Exists($"{folderpath}/{subjectName}"))
+                    itemsForSubject.bookmarksPath = $"{folderpath}/{subjectName}";
+
+                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}Book";
+                if (Directory.Exists(folderpath) && File.Exists($"{ folderpath}/{subjectName}"))
+                    itemsForSubject.bookPath = $"{folderpath}/{subjectName}";
+
+                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}Image";
+                if (Directory.Exists(folderpath) && File.Exists($"{ folderpath}/{subjectName}"))
+                    itemsForSubject.bookPath = $"{folderpath}/{subjectName}";
+
+                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}Lesson";
+                if (Directory.Exists(folderpath) && File.Exists($"{ folderpath}/{subjectName}"))
+                    itemsForSubject.bookPath = $"{folderpath}/{subjectName}";
+
+                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}Video";
+                if (Directory.Exists(folderpath) && File.Exists($"{ folderpath}/{subjectName}"))
+                    itemsForSubject.bookPath = $"{folderpath}/{subjectName}";
+
+                folderpath = $"{HttpContext.Current.Server.MapPath("~/Files/")}LessonSummary";
+                if (Directory.Exists(folderpath) && File.Exists($"{ folderpath}/{subjectName}"))
+                    itemsForSubject.lessonSummary = FilesDL.GetTextFromFile($"{folderpath}/{subjectName}");
+                return itemsForSubject;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        public static List<Items1> GetItemsBySubjectIdAndKind(int subjectId, int kindId)
+        {
+            List<Items> lst = new List<Items>(ItemsDL.GetAllItems());
+            return ItemsConvertor.ConvertToListDto(lst.Where(i => i.ItemKind == kindId && i.ItemsSubject != null && i.ItemsSubject?.Where(x => x.SubjectId == subjectId).Count() > 0).ToList());
         }
 
     }

@@ -16,7 +16,7 @@ namespace RatzKatzvi.Controllers
         public IHttpActionResult GetAllItems()
         {
             try
-            
+
             {
                 return Ok(ItemsBL.GetAllItems());
             }
@@ -62,11 +62,11 @@ namespace RatzKatzvi.Controllers
         }
         //GetAllVideos
         [Route("GetAllVideos/{kindId}/{pageNum}")]
-        public IHttpActionResult GetAllVideos(int kindId,int pageNum)
+        public IHttpActionResult GetAllVideos(int kindId, int pageNum)
         {
             try
             {
-                List<Items1> items = ItemsBL.GetAllVideos(kindId,pageNum);
+                List<Items1> items = ItemsBL.GetAllVideos(kindId, pageNum);
                 if (items.Count == 0)
                     throw new Exception();
                 return Ok(items);
@@ -102,12 +102,59 @@ namespace RatzKatzvi.Controllers
                 if (items.Count == 0)
                     throw new Exception();
                 return Ok(items);
-              
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
                 return Ok();
+            }
+        }
+        //GetItemsBySubjectId
+        [Route("GetItemsBySubjectId/{subjectId}")]
+        public IHttpActionResult GetItemsBySubjectId(int subjectId)
+        {
+            try
+            {
+                ItemsForSubject items = ItemsBL.GetItemsBySubjectId(subjectId);
+                if (items == null)
+                    throw new Exception();
+                return Ok(items);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return Ok();
+            }
+        }
+        //GetItemsBySubjectIdAndKind
+        [Route("GetItemsBySubjectIdAndKind/{subjectId}/{kindId}")]
+        public IHttpActionResult GetItemsBySubjectIdAndKind(int subjectId, int kindId)
+        {
+            try
+            {
+                List<Items1> items = ItemsBL.GetItemsBySubjectIdAndKind(subjectId, kindId);
+                if (items.Count == 0)
+                    throw new Exception();
+                return Ok(items);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return Ok();
+            }
+        }
+        //GetItemsForAllSubjects
+        [Route("GetItemsForAllSubjects")]
+        public IHttpActionResult GetItemsForAllSubjects()
+        {
+            try
+            {
+                return Ok(ItemsBL.GetItemsForAllSubjects());
+            }catch(Exception ex)
+            {
+                return NotFound();
             }
         }
         // POST: api/Items

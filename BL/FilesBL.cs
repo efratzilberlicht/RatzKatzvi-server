@@ -10,7 +10,7 @@ namespace BL
 {
     public static class FilesBL
     {
-        public static string GetTextFromFile(string folderName)
+        public static string GetTextFromFile(string folderName, string fileName = null)
         {
             string FolderPath = HttpContext.Current.Server.MapPath("~\\Files\\" + folderName + "\\");
             DirectoryInfo FolderDir = new DirectoryInfo(FolderPath);
@@ -18,7 +18,24 @@ namespace BL
             {
                 return "Not Found Folder";
             }
-            var filePath = Directory.GetFiles(FolderPath).OrderByDescending(file => File.GetLastWriteTime(file)).First();
+            var filePath = "";
+            if (fileName == null)
+                filePath = Directory.GetFiles(FolderPath).OrderByDescending(file => File.GetLastWriteTime(file)).First();
+            else
+            {
+                var files = Directory.GetFiles(FolderPath);
+                bool flag = true;
+                for (int i = 0; i < files.Length && flag; i++)
+                {
+                    if (Path.GetFileName(files[i]) == fileName)
+                    {
+                        filePath = files[i];
+                        flag = false;
+                    }
+                }
+                if (filePath == null)
+                    return "Can't find the file";
+            }
             return DL.FilesDL.GetTextFromFile(filePath);
         }
 
@@ -29,12 +46,12 @@ namespace BL
                 var result = DL.FilesDL.SaveFile(files, specificFolder);
                 if (!result.Contains("Error"))
                 {
-                    BL.ItemsBL.AddItem(new Dto.Items1 { EnableSearch = true, ItemKind = ItemKind, ItemName = result });
+                    ItemsBL.AddItem(new Dto.Items1 { EnableSearch = true, ItemKind = ItemKind, ItemName = result });
                     return "Success";
                 }
                 return result;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return "Error Saving File";
             }
@@ -43,7 +60,7 @@ namespace BL
         {
             return DL.FilesDL.GetAllFilesWithName(name, specificFolder);
         }
-        public static HttpResponseMessage DownloadFile(string fileFolder,string fileName)
+        public static HttpResponseMessage DownloadFile(string fileFolder, string fileName)
         {
             return DL.FilesDL.DownloadFile(fileFolder, fileName);
         }

@@ -69,7 +69,7 @@ namespace DL
                             try
                             {
                                 postedFile.SaveAs(filePath);
-                                return Path.GetFileNameWithoutExtension(filePath);
+                                return Path.GetFileName(filePath);
                             }
                             catch (Exception ex)
                             {

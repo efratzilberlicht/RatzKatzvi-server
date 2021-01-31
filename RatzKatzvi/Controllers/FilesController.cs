@@ -23,6 +23,17 @@ namespace RatzKatzvi.Controllers
             }
             catch (Exception ex) { return NotFound(); }
         }
+        //GetTextFromFile
+        [HttpGet]
+        [Route("GetTextFromFile/{folderName}/{fileName}")]
+        public IHttpActionResult GetTextFromFile(string folderName, string fileName)
+        {
+            try
+            {
+                return Ok(BL.FilesBL.GetTextFromFile(folderName,fileName));
+            }
+            catch (Exception ex) { return NotFound(); }
+        }
         [HttpGet]
         [Route("GetCVWithName/{name}")]
         public IHttpActionResult GetCVWithName(string name)
@@ -93,7 +104,7 @@ namespace RatzKatzvi.Controllers
                 return NotFound();
             }
         }
-
+       
 
         //[HttpGet]
         //[Route("GetTextFromFile")]
@@ -208,7 +219,7 @@ namespace RatzKatzvi.Controllers
                 var httpRequest = HttpContext.Current.Request;
                 //TODO
                 //change the third arg in th next row to the correct type
-                return Ok(BL.FilesBL.SaveFile(httpRequest, "Book/", 0));
+                return Ok(BL.FilesBL.SaveFile(httpRequest, "Book/", 1));
             }
             catch (Exception ex)
             {

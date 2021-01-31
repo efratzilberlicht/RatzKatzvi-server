@@ -54,6 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumItemsKinds.cs" />
+    <Compile Include="ItemsForSubject.cs" />
     <Compile Include="WordLocation1.cs" />
     <Compile Include="BookPages1.cs" />
     <Compile Include="Items1.cs" />

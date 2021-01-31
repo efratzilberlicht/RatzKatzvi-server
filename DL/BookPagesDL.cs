@@ -1,8 +1,10 @@
 ﻿using iTextSharp.text.pdf.parser;
+using SautinSoft.Document;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -40,13 +42,14 @@ namespace DL
             switch (item.ItemKind)
             {
                 case 1:
-                    url = HttpContext.Current.Server.MapPath("~\\Files\\Books\\" + item.ItemName);
+                url = HttpContext.Current.Server.MapPath("~\\Files\\Book\\" + item.ItemName);
                     break;
                 case 4:
                     url = HttpContext.Current.Server.MapPath("~\\Files\\Articals\\" + item.ItemName);
                     break;
                 default: return;
             }
+            url= url.Replace("\\", "/");
             List<BookPages> book = ConvertDocToObject(url, item.ItemId);
             AddBook(book);
         }
@@ -147,15 +150,36 @@ namespace DL
         private static List<BookPages> ConvertDocToObject(string url, int itemId)
         {
             List<BookPages> book = new List<BookPages>();
-            using (iTextSharp.text.pdf.PdfReader reader = new iTextSharp.text.pdf.PdfReader(url))
-            {
-                string page;
-                for (int i = 1; i <= reader.NumberOfPages; i++)
-                {
-                    page = Reverse(PdfTextExtractor.GetTextFromPage(reader, i));
-                    book.Add(new BookPages { ItemId = itemId, BookPage = i + 1, Text = page });
-                }
-            }
+            DocumentCore dc = DocumentCore.Load(url);
+            //dc.Save();
+            //using (MemoryStream msInp = new MemoryStream(inpData))
+            //{
+
+            //    // Load a document.
+            //    DocumentCore dc = DocumentCore.Load(msInp, new DocxLoadOptions());
+
+            //    // Save the document to text format.
+            //    using (MemoryStream outMs = new MemoryStream())
+            //    {
+            //        dc.Save(outMs, new TxtSaveOptions() );
+            //        outData = outMs.ToArray();
+            //    }
+            //    // Show the result for demonstration purposes.
+            //    if (outData != null)
+            //    {
+            //        File.WriteAllBytes(outFile, outData);
+            //        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(outFile) { UseShellExecute = true });
+            //    }
+            //}
+            //using (iTextSharp.text.pdf.PdfReader reader = new iTextSharp.text.pdf.PdfReader(url))
+            //{
+            //    string page;
+            //    for (int i = 1; i <= reader.NumberOfPages; i++)
+            //    {
+            //        page = Reverse(PdfTextExtractor.GetTextFromPage(reader, i));
+            //        book.Add(new BookPages { ItemId = itemId, BookPage = i + 1, Text = page });
+            //    }
+            //}
             return book;
         }
         private static string Reverse(string s)
